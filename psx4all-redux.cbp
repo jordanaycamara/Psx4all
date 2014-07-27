@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="psx4all-redux" />
+		<Option pch_mode="2" />
+		<Option compiler="gcw_zero_compiler" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/psx4all-redux" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcw_zero_compiler" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/psx4all-redux" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcw_zero_compiler" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="src/arm/memcmp.S" />
+		<Unit filename="src/arm/memcpy.S" />
+		<Unit filename="src/arm/memset.S" />
+		<Unit filename="src/arm/strcmp.S" />
+		<Unit filename="src/arm/strlen.S" />
+		<Unit filename="src/arm/strncmp.S" />
+		<Unit filename="src/bios.cpp" />
+		<Unit filename="src/bios.h" />
+		<Unit filename="src/cdr/About.cpp" />
+		<Unit filename="src/cdr/CDDAData.cpp" />
+		<Unit filename="src/cdr/CDDAData.hpp" />
+		<Unit filename="src/cdr/CDInterface.hpp" />
+		<Unit filename="src/cdr/CDTime.hpp" />
+		<Unit filename="src/cdr/ConfigCallbacks.cpp" />
+		<Unit filename="src/cdr/ConfigCallbacks.hpp" />
+		<Unit filename="src/cdr/ConfigFunctions.cpp" />
+		<Unit filename="src/cdr/ConfigFunctions.hpp" />
+		<Unit filename="src/cdr/Exception.hpp" />
+		<Unit filename="src/cdr/FileInterface.cpp" />
+		<Unit filename="src/cdr/FileInterface.hpp" />
+		<Unit filename="src/cdr/Globals.cpp" />
+		<Unit filename="src/cdr/Open.cpp" />
+		<Unit filename="src/cdr/PS2Open.cpp" />
+		<Unit filename="src/cdr/Preferences.cpp" />
+		<Unit filename="src/cdr/Preferences.hpp" />
+		<Unit filename="src/cdr/SubchannelData.cpp" />
+		<Unit filename="src/cdr/SubchannelData.hpp" />
+		<Unit filename="src/cdr/TrackInfo.hpp" />
+		<Unit filename="src/cdr/TrackParser.cpp" />
+		<Unit filename="src/cdr/TrackParser.hpp" />
+		<Unit filename="src/cdr/Utils.hpp" />
+		<Unit filename="src/cdr/bzip/blocksort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/bzip/bzlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/bzip/bzlib.h" />
+		<Unit filename="src/cdr/bzip/bzlib_private.h" />
+		<Unit filename="src/cdr/bzip/compress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/bzip/crctable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/bzip/decompress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/bzip/huffman.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/bzip/randtable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/defines.h" />
+		<Unit filename="src/cdr/externs.h" />
+		<Unit filename="src/cdr/oldversion/cdriso.cpp" />
+		<Unit filename="src/cdr/oldversion/cdriso.h" />
+		<Unit filename="src/cdr/unrar/unrarlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/unrar/unrarlib.h" />
+		<Unit filename="src/cdr/zlib/adler32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/crc32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/deflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/deflate.h" />
+		<Unit filename="src/cdr/zlib/example.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/gzio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/infblock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/infblock.h" />
+		<Unit filename="src/cdr/zlib/infcodes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/infcodes.h" />
+		<Unit filename="src/cdr/zlib/inffast.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/inffast.h" />
+		<Unit filename="src/cdr/zlib/inffixed.h" />
+		<Unit filename="src/cdr/zlib/inflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/inftrees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/inftrees.h" />
+		<Unit filename="src/cdr/zlib/infutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/infutil.h" />
+		<Unit filename="src/cdr/zlib/maketree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/minigzip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/trees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/trees.h" />
+		<Unit filename="src/cdr/zlib/uncompr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/zcompress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/zconf.h" />
+		<Unit filename="src/cdr/zlib/zlib.h" />
+		<Unit filename="src/cdr/zlib/zutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdr/zlib/zutil.h" />
+		<Unit filename="src/cdrom.cpp" />
+		<Unit filename="src/cdrom.h" />
+		<Unit filename="src/common.h" />
+		<Unit filename="src/components.cpp" />
+		<Unit filename="src/components.h" />
+		<Unit filename="src/counters_new.cpp" />
+		<Unit filename="src/counters_new.h" />
+		<Unit filename="src/debug.h" />
+		<Unit filename="src/decode_xa.cpp" />
+		<Unit filename="src/decode_xa.h" />
+		<Unit filename="src/dma.cpp" />
+		<Unit filename="src/dma.h" />
+		<Unit filename="src/evaluator/eval_alu.cpp.h" />
+		<Unit filename="src/evaluator/eval_helper.cpp.h" />
+		<Unit filename="src/evaluator/evaluator.cpp.h" />
+		<Unit filename="src/franspu/spu.cpp" />
+		<Unit filename="src/franspu/spu.h" />
+		<Unit filename="src/franspu/spu_adsr.h" />
+		<Unit filename="src/franspu/spu_callback.cpp" />
+		<Unit filename="src/franspu/spu_callback.h" />
+		<Unit filename="src/franspu/spu_dma.cpp" />
+		<Unit filename="src/franspu/spu_output.cpp" />
+		<Unit filename="src/franspu/spu_output_iphone.cpp" />
+		<Unit filename="src/franspu/spu_output_sdl.cpp" />
+		<Unit filename="src/franspu/spu_registers.cpp" />
+		<Unit filename="src/franspu/spu_xa.h" />
+		<Unit filename="src/generator/arm/gen_alu.cpp.h" />
+		<Unit filename="src/generator/arm/gen_helper.cpp.h" />
+		<Unit filename="src/generator/arm/gen_lsu.cpp.h" />
+		<Unit filename="src/generator/arm/generator.cpp.h" />
+		<Unit filename="src/generator/mips/gen_alu.cpp.h" />
+		<Unit filename="src/generator/mips/gen_helper.cpp.h" />
+		<Unit filename="src/generator/mips/gen_lsu.cpp.h" />
+		<Unit filename="src/generator/mips/generator.cpp.h" />
+		<Unit filename="src/giz_sdl/minimal.cpp" />
+		<Unit filename="src/giz_sdl/minimal.h" />
+		<Unit filename="src/giz_sdl/psx4ppc.cpp" />
+		<Unit filename="src/giz_sdl/psx4ppc.h" />
+		<Unit filename="src/giz_sdl/psx4ppcppc.rc" />
+		<Unit filename="src/giz_sdl/psx4ppcsp.rc" />
+		<Unit filename="src/giz_sdl/resourceppc.h" />
+		<Unit filename="src/giz_sdl/resourcesp.h" />
+		<Unit filename="src/giz_sdl/stdafx.cpp" />
+		<Unit filename="src/giz_sdl/stdafx.h" />
+		<Unit filename="src/giz_sdl/timeval.h" />
+		<Unit filename="src/giz_sdl/videogl.h" />
+		<Unit filename="src/glgpu/gpu.cpp" />
+		<Unit filename="src/glgpu/gpu.h" />
+		<Unit filename="src/glgpu/gpu_gl.cpp" />
+		<Unit filename="src/glgpu/gpu_prim.cpp" />
+		<Unit filename="src/gpu-gles/gpuDraw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/gpu-gles/gpuFps.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/gpu-gles/gpuPlugin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/gpu-gles/gpuPrim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/gpu-gles/gpuTexture.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/gpuAPI/drhellGPU/GPU.cpp" />
+		<Unit filename="src/gpuAPI/drhellGPU/GPU_DEV.cpp" />
+		<Unit filename="src/gpuAPI/drhellGPU/GPU_DRAW.cpp" />
+		<Unit filename="src/gpuAPI/drhellGPU/GPU_PRIM.cpp" />
+		<Unit filename="src/gpuAPI/drhellGPU/inner_Blit.h" />
+		<Unit filename="src/gpuAPI/gpuAPI.cpp" />
+		<Unit filename="src/gpuAPI/gpuAPI.h" />
+		<Unit filename="src/gpuAPI/newGPU/ARM_asm.S" />
+		<Unit filename="src/gpuAPI/newGPU/core_Command.cpp" />
+		<Unit filename="src/gpuAPI/newGPU/core_Dma.cpp" />
+		<Unit filename="src/gpuAPI/newGPU/core_Draw.cpp" />
+		<Unit filename="src/gpuAPI/newGPU/core_Misc.cpp" />
+		<Unit filename="src/gpuAPI/newGPU/fixed.cpp" />
+		<Unit filename="src/gpuAPI/newGPU/fixed.h" />
+		<Unit filename="src/gpuAPI/newGPU/inner.cpp" />
+		<Unit filename="src/gpuAPI/newGPU/inner_Blit (copy).h" />
+		<Unit filename="src/gpuAPI/newGPU/inner_Blit.h" />
+		<Unit filename="src/gpuAPI/newGPU/inner_Pixel.h" />
+		<Unit filename="src/gpuAPI/newGPU/inner_Poly.h" />
+		<Unit filename="src/gpuAPI/newGPU/inner_Sprite.h" />
+		<Unit filename="src/gpuAPI/newGPU/newGPU.cpp" />
+		<Unit filename="src/gpuAPI/newGPU/newGPU.h" />
+		<Unit filename="src/gpuAPI/newGPU/op_Blend.h" />
+		<Unit filename="src/gpuAPI/newGPU/op_Light.h" />
+		<Unit filename="src/gpuAPI/newGPU/op_Texture.h" />
+		<Unit filename="src/gpuAPI/newGPU/profiller.h" />
+		<Unit filename="src/gpuAPI/newGPU/raster.h" />
+		<Unit filename="src/gpuAPI/newGPU/raster_Image.cpp" />
+		<Unit filename="src/gpuAPI/newGPU/raster_Line.cpp" />
+		<Unit filename="src/gpuAPI/newGPU/raster_Poly.cpp" />
+		<Unit filename="src/gpuAPI/newGPU/raster_Sprite.cpp" />
+		<Unit filename="src/gte.cpp" />
+		<Unit filename="src/gte.h" />
+		<Unit filename="src/gte2.cpp" />
+		<Unit filename="src/gte_mame.cpp" />
+		<Unit filename="src/gte_mame.h" />
+		<Unit filename="src/gte_new.cpp" />
+		<Unit filename="src/gte_new.h" />
+		<Unit filename="src/gte_pcsx.cpp" />
+		<Unit filename="src/gte_pcsx.h" />
+		<Unit filename="src/gui.h" />
+		<Unit filename="src/hle.cpp" />
+		<Unit filename="src/hle.h" />
+		<Unit filename="src/hw.cpp" />
+		<Unit filename="src/hw.h" />
+		<Unit filename="src/include/cdr/CDDAData.hpp" />
+		<Unit filename="src/include/cdr/CDInterface.hpp" />
+		<Unit filename="src/include/cdr/CDTime.hpp" />
+		<Unit filename="src/include/cdr/ConfigCallbacks.hpp" />
+		<Unit filename="src/include/cdr/ConfigFunctions.hpp" />
+		<Unit filename="src/include/cdr/Exception.hpp" />
+		<Unit filename="src/include/cdr/FileInterface.hpp" />
+		<Unit filename="src/include/cdr/Preferences.hpp" />
+		<Unit filename="src/include/cdr/SubchannelData.hpp" />
+		<Unit filename="src/include/cdr/TrackInfo.hpp" />
+		<Unit filename="src/include/cdr/TrackParser.hpp" />
+		<Unit filename="src/include/cdr/Utils.hpp" />
+		<Unit filename="src/include/cdr/bzip/bzlib.h" />
+		<Unit filename="src/include/cdr/bzip/bzlib_private.h" />
+		<Unit filename="src/include/cdr/defines.h" />
+		<Unit filename="src/include/cdr/externs.h" />
+		<Unit filename="src/include/cdr/oldversion/cdriso.h" />
+		<Unit filename="src/include/cdr/unrar/unrarlib.h" />
+		<Unit filename="src/include/cdr/zlib/deflate.h" />
+		<Unit filename="src/include/cdr/zlib/infblock.h" />
+		<Unit filename="src/include/cdr/zlib/infcodes.h" />
+		<Unit filename="src/include/cdr/zlib/inffast.h" />
+		<Unit filename="src/include/cdr/zlib/inffixed.h" />
+		<Unit filename="src/include/cdr/zlib/inftrees.h" />
+		<Unit filename="src/include/cdr/zlib/infutil.h" />
+		<Unit filename="src/include/cdr/zlib/trees.h" />
+		<Unit filename="src/include/cdr/zlib/zconf.h" />
+		<Unit filename="src/include/cdr/zlib/zlib.h" />
+		<Unit filename="src/include/cdr/zlib/zutil.h" />
+		<Unit filename="src/include/evaluator/eval_alu.cpp.h" />
+		<Unit filename="src/include/evaluator/eval_helper.cpp.h" />
+		<Unit filename="src/include/evaluator/evaluator.cpp.h" />
+		<Unit filename="src/include/franspu/spu.h" />
+		<Unit filename="src/include/franspu/spu_adsr.h" />
+		<Unit filename="src/include/franspu/spu_callback.h" />
+		<Unit filename="src/include/franspu/spu_xa.h" />
+		<Unit filename="src/include/generator/arm/gen_alu.cpp.h" />
+		<Unit filename="src/include/generator/arm/gen_helper.cpp.h" />
+		<Unit filename="src/include/generator/arm/gen_lsu.cpp.h" />
+		<Unit filename="src/include/generator/arm/generator.cpp.h" />
+		<Unit filename="src/include/generator/mips/gen_alu.cpp.h" />
+		<Unit filename="src/include/generator/mips/gen_helper.cpp.h" />
+		<Unit filename="src/include/generator/mips/gen_lsu.cpp.h" />
+		<Unit filename="src/include/generator/mips/generator.cpp.h" />
+		<Unit filename="src/include/giz_sdl/minimal.h" />
+		<Unit filename="src/include/giz_sdl/psx4ppc.h" />
+		<Unit filename="src/include/giz_sdl/resourceppc.h" />
+		<Unit filename="src/include/giz_sdl/resourcesp.h" />
+		<Unit filename="src/include/giz_sdl/stdafx.h" />
+		<Unit filename="src/include/giz_sdl/timeval.h" />
+		<Unit filename="src/include/giz_sdl/videogl.h" />
+		<Unit filename="src/include/glgpu/gpu.h" />
+		<Unit filename="src/include/gpu-gles/gles/EGL/egl.h" />
+		<Unit filename="src/include/gpu-gles/gles/EGL/eglext.h" />
+		<Unit filename="src/include/gpu-gles/gles/EGL/eglplatform.h" />
+		<Unit filename="src/include/gpu-gles/gles/GL/egl.h" />
+		<Unit filename="src/include/gpu-gles/gles/GL/gl.h" />
+		<Unit filename="src/include/gpu-gles/gles/GL/glext.h" />
+		<Unit filename="src/include/gpu-gles/gles/GL/glplatform.h" />
+		<Unit filename="src/include/gpu-gles/gles/GLES2/gl2.h" />
+		<Unit filename="src/include/gpu-gles/gles/GLES2/gl2ext.h" />
+		<Unit filename="src/include/gpu-gles/gles/GLES2/gl2extimg.h" />
+		<Unit filename="src/include/gpu-gles/gles/GLES2/gl2platform.h" />
+		<Unit filename="src/include/gpu-gles/gles/Gl1.0/gl.h" />
+		<Unit filename="src/include/gpu-gles/gles/Gl1.0/glext.h" />
+		<Unit filename="src/include/gpu-gles/gles/Gl1.0/glplatform.h" />
+		<Unit filename="src/include/gpu-gles/gles/KHR/khrplatform.h" />
+		<Unit filename="src/include/gpu-gles/gpuDraw.h" />
+		<Unit filename="src/include/gpu-gles/gpuExternals.h" />
+		<Unit filename="src/include/gpu-gles/gpuFps.h" />
+		<Unit filename="src/include/gpu-gles/gpuPlugin.h" />
+		<Unit filename="src/include/gpu-gles/gpuPrim.h" />
+		<Unit filename="src/include/gpu-gles/gpuStdafx.h" />
+		<Unit filename="src/include/gpu-gles/gpuTexture.h" />
+		<Unit filename="src/include/gpuAPI/drhellGPU/inner_Blit.h" />
+		<Unit filename="src/include/gpuAPI/gpuAPI.h" />
+		<Unit filename="src/include/gpuAPI/newGPU/fixed.h" />
+		<Unit filename="src/include/gpuAPI/newGPU/inner_Blit (copy).h" />
+		<Unit filename="src/include/gpuAPI/newGPU/inner_Blit.h" />
+		<Unit filename="src/include/gpuAPI/newGPU/inner_Pixel.h" />
+		<Unit filename="src/include/gpuAPI/newGPU/inner_Poly.h" />
+		<Unit filename="src/include/gpuAPI/newGPU/inner_Sprite.h" />
+		<Unit filename="src/include/gpuAPI/newGPU/newGPU.h" />
+		<Unit filename="src/include/gpuAPI/newGPU/op_Blend.h" />
+		<Unit filename="src/include/gpuAPI/newGPU/op_Light.h" />
+		<Unit filename="src/include/gpuAPI/newGPU/op_Texture.h" />
+		<Unit filename="src/include/gpuAPI/newGPU/profiller.h" />
+		<Unit filename="src/include/gpuAPI/newGPU/raster.h" />
+		<Unit filename="src/include/libpcsx/bios.h" />
+		<Unit filename="src/include/libpcsx/cdrom.h" />
+		<Unit filename="src/include/libpcsx/common.h" />
+		<Unit filename="src/include/libpcsx/components.h" />
+		<Unit filename="src/include/libpcsx/counters_new.h" />
+		<Unit filename="src/include/libpcsx/debug.h" />
+		<Unit filename="src/include/libpcsx/decode_xa.h" />
+		<Unit filename="src/include/libpcsx/dma.h" />
+		<Unit filename="src/include/libpcsx/gte.h" />
+		<Unit filename="src/include/libpcsx/gte_mame.h" />
+		<Unit filename="src/include/libpcsx/gte_new.h" />
+		<Unit filename="src/include/libpcsx/gte_pcsx.h" />
+		<Unit filename="src/include/libpcsx/gui.h" />
+		<Unit filename="src/include/libpcsx/hle.h" />
+		<Unit filename="src/include/libpcsx/hw.h" />
+		<Unit filename="src/include/libpcsx/jz4740.h" />
+		<Unit filename="src/include/libpcsx/mdec.h" />
+		<Unit filename="src/include/libpcsx/mem.h" />
+		<Unit filename="src/include/libpcsx/misc.h" />
+		<Unit filename="src/include/libpcsx/plugins.h" />
+		<Unit filename="src/include/libpcsx/profiler.h" />
+		<Unit filename="src/include/libpcsx/psemu_plugin_defs.h" />
+		<Unit filename="src/include/libpcsx/psxTypes.h" />
+		<Unit filename="src/include/libpcsx/psxcommon.h" />
+		<Unit filename="src/include/libpcsx/psxhle.h" />
+		<Unit filename="src/include/libpcsx/r3000a_new.h" />
+		<Unit filename="src/include/libpcsx/sio.h" />
+		<Unit filename="src/include/libpcsx/spu.h" />
+		<Unit filename="src/include/libpcsx/system.h" />
+		<Unit filename="src/include/libpcsx/unzip.h" />
+		<Unit filename="src/include/pandora/minimal.h" />
+		<Unit filename="src/include/petespu/adsr.h" />
+		<Unit filename="src/include/petespu/alsa.h" />
+		<Unit filename="src/include/petespu/externals.h" />
+		<Unit filename="src/include/petespu/gauss_i.h" />
+		<Unit filename="src/include/petespu/oss.h" />
+		<Unit filename="src/include/petespu/psemuxa.h" />
+		<Unit filename="src/include/petespu/registers.h" />
+		<Unit filename="src/include/petespu/regs.h" />
+		<Unit filename="src/include/petespu/reverb.h" />
+		<Unit filename="src/include/petespu/spu.h" />
+		<Unit filename="src/include/petespu/spu_dma.h" />
+		<Unit filename="src/include/petespu/stdafx.h" />
+		<Unit filename="src/include/petespu/xa.h" />
+		<Unit filename="src/include/recompiler3/arm/arm_codegen.h" />
+		<Unit filename="src/include/recompiler3/arm/arm_dpimacros.h" />
+		<Unit filename="src/include/recompiler3/arm/defines.h" />
+		<Unit filename="src/include/recompiler3/arm/disasm.h" />
+		<Unit filename="src/include/recompiler3/arm/externs.h" />
+		<Unit filename="src/include/recompiler3/arm/rec_alu.cpp.h" />
+		<Unit filename="src/include/recompiler3/arm/rec_bcu.cpp.h" />
+		<Unit filename="src/include/recompiler3/arm/rec_cp0.cpp.h" />
+		<Unit filename="src/include/recompiler3/arm/rec_cpo.h" />
+		<Unit filename="src/include/recompiler3/arm/rec_gte.cpp.h" />
+		<Unit filename="src/include/recompiler3/arm/rec_lsu.cpp.h" />
+		<Unit filename="src/include/recompiler3/arm/rec_mdu.cpp.h" />
+		<Unit filename="src/include/recompiler3/arm/recompiler.h" />
+		<Unit filename="src/include/recompiler3/mips/cache.h" />
+		<Unit filename="src/include/recompiler3/mips/cachectl.h" />
+		<Unit filename="src/include/recompiler3/mips/defines.h" />
+		<Unit filename="src/include/recompiler3/mips/disasm.h" />
+		<Unit filename="src/include/recompiler3/mips/externs.h" />
+		<Unit filename="src/include/recompiler3/mips/mips_codegen.h" />
+		<Unit filename="src/include/recompiler3/mips/mips_dpimacros.h" />
+		<Unit filename="src/include/recompiler3/mips/rec_alu.cpp.h" />
+		<Unit filename="src/include/recompiler3/mips/rec_bcu.cpp.h" />
+		<Unit filename="src/include/recompiler3/mips/rec_cp0.cpp.h" />
+		<Unit filename="src/include/recompiler3/mips/rec_cpo.h" />
+		<Unit filename="src/include/recompiler3/mips/rec_gte.cpp.h" />
+		<Unit filename="src/include/recompiler3/mips/rec_lsu.cpp.h" />
+		<Unit filename="src/include/recompiler3/mips/rec_mdu.cpp.h" />
+		<Unit filename="src/include/recompiler3/mips/recompiler.h" />
+		<Unit filename="src/include/sdl/minimal.h" />
+		<Unit filename="src/include/sdl/timeval.h" />
+		<Unit filename="src/include/zaurus_sdl/minimal.h" />
+		<Unit filename="src/include/zaurus_sdl/timeval.h" />
+		<Unit filename="src/include/zaurus_sdl/videogl.h" />
+		<Unit filename="src/include/zlib/deflate.h" />
+		<Unit filename="src/include/zlib/infblock.h" />
+		<Unit filename="src/include/zlib/infcodes.h" />
+		<Unit filename="src/include/zlib/inffast.h" />
+		<Unit filename="src/include/zlib/inffixed.h" />
+		<Unit filename="src/include/zlib/inftrees.h" />
+		<Unit filename="src/include/zlib/infutil.h" />
+		<Unit filename="src/include/zlib/trees.h" />
+		<Unit filename="src/include/zlib/zconf.h" />
+		<Unit filename="src/include/zlib/zlib.h" />
+		<Unit filename="src/include/zlib/zutil.h" />
+		<Unit filename="src/interpreter/interpreter.cpp" />
+		<Unit filename="src/interpreter/interpreter_new/psxinterpreter.cpp" />
+		<Unit filename="src/interpreter/interpreter_pcsx/interpreter.cpp" />
+		<Unit filename="src/iphone/ARM_asm.s" />
+		<Unit filename="src/iphone/ControllerView.h" />
+		<Unit filename="src/iphone/EmulationView.h" />
+		<Unit filename="src/iphone/FileBrowser.h" />
+		<Unit filename="src/iphone/FileTable.h" />
+		<Unit filename="src/iphone/JoyPad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/iphone/JoyPad.h" />
+		<Unit filename="src/iphone/MainView.h" />
+		<Unit filename="src/iphone/ScreenView.h" />
+		<Unit filename="src/iphone/app.h" />
+		<Unit filename="src/iphone/app_iPhone.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/iphone/app_iPhone.h" />
+		<Unit filename="src/iphone/minimal.cpp" />
+		<Unit filename="src/iphone/minimal.h" />
+		<Unit filename="src/jz4740.h" />
+		<Unit filename="src/libpcsx/bios.cpp" />
+		<Unit filename="src/libpcsx/cdrom.cpp" />
+		<Unit filename="src/libpcsx/components.cpp" />
+		<Unit filename="src/libpcsx/counters_new.cpp" />
+		<Unit filename="src/libpcsx/decode_xa.cpp" />
+		<Unit filename="src/libpcsx/dma.cpp" />
+		<Unit filename="src/libpcsx/gte.cpp" />
+		<Unit filename="src/libpcsx/gte2.cpp" />
+		<Unit filename="src/libpcsx/gte_mame.cpp" />
+		<Unit filename="src/libpcsx/gte_new.cpp" />
+		<Unit filename="src/libpcsx/gte_pcsx.cpp" />
+		<Unit filename="src/libpcsx/hle.cpp" />
+		<Unit filename="src/libpcsx/hw.cpp" />
+		<Unit filename="src/libpcsx/main.cpp" />
+		<Unit filename="src/libpcsx/mdec.cpp" />
+		<Unit filename="src/libpcsx/mem.cpp" />
+		<Unit filename="src/libpcsx/misc.cpp" />
+		<Unit filename="src/libpcsx/pad.cpp" />
+		<Unit filename="src/libpcsx/plugins.cpp" />
+		<Unit filename="src/libpcsx/psxhle.cpp" />
+		<Unit filename="src/libpcsx/r3000a_new.cpp" />
+		<Unit filename="src/libpcsx/sio.cpp" />
+		<Unit filename="src/libpcsx/spu.cpp" />
+		<Unit filename="src/libpcsx/unzip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/mdec.cpp" />
+		<Unit filename="src/mdec.h" />
+		<Unit filename="src/mem.cpp" />
+		<Unit filename="src/mem.h" />
+		<Unit filename="src/misc.cpp" />
+		<Unit filename="src/misc.h" />
+		<Unit filename="src/newgui.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/newgui.h" />
+		<Unit filename="src/nullspu/spu_core.cpp" />
+		<Unit filename="src/pad.cpp" />
+		<Unit filename="src/pandora/memcmp.S" />
+		<Unit filename="src/pandora/memcpy.S" />
+		<Unit filename="src/pandora/memset.S" />
+		<Unit filename="src/pandora/minimal.cpp" />
+		<Unit filename="src/pandora/minimal.h" />
+		<Unit filename="src/pandora/strcmp.S" />
+		<Unit filename="src/pandora/strlen.S" />
+		<Unit filename="src/pandora/strncmp.S" />
+		<Unit filename="src/petespu/adsr.cpp" />
+		<Unit filename="src/petespu/adsr.h" />
+		<Unit filename="src/petespu/alsa.cpp" />
+		<Unit filename="src/petespu/alsa.h" />
+		<Unit filename="src/petespu/externals.h" />
+		<Unit filename="src/petespu/freeze.cpp" />
+		<Unit filename="src/petespu/gauss_i.h" />
+		<Unit filename="src/petespu/oss.cpp" />
+		<Unit filename="src/petespu/oss.h" />
+		<Unit filename="src/petespu/psemu.cpp" />
+		<Unit filename="src/petespu/psemuxa.h" />
+		<Unit filename="src/petespu/registers.cpp" />
+		<Unit filename="src/petespu/registers.h" />
+		<Unit filename="src/petespu/regs.h" />
+		<Unit filename="src/petespu/reverb.cpp" />
+		<Unit filename="src/petespu/reverb.h" />
+		<Unit filename="src/petespu/spu.cpp" />
+		<Unit filename="src/petespu/spu.h" />
+		<Unit filename="src/petespu/spu_dma.cpp" />
+		<Unit filename="src/petespu/spu_dma.h" />
+		<Unit filename="src/petespu/stdafx.cpp" />
+		<Unit filename="src/petespu/stdafx.h" />
+		<Unit filename="src/petespu/xa.cpp" />
+		<Unit filename="src/petespu/xa.h" />
+		<Unit filename="src/profiler.h" />
+		<Unit filename="src/psxTypes.h" />
+		<Unit filename="src/r3000a_new.cpp" />
+		<Unit filename="src/r3000a_new.h" />
+		<Unit filename="src/recompiler3/arm/arm.S" />
+		<Unit filename="src/recompiler3/arm/arm_codegen.h" />
+		<Unit filename="src/recompiler3/arm/arm_dpimacros.h" />
+		<Unit filename="src/recompiler3/arm/arm_std_rec_calls.cpp" />
+		<Unit filename="src/recompiler3/arm/arm_std_rec_debug.cpp" />
+		<Unit filename="src/recompiler3/arm/arm_std_rec_globals.cpp" />
+		<Unit filename="src/recompiler3/arm/arm_std_rec_regcache.cpp" />
+		<Unit filename="src/recompiler3/arm/defines.h" />
+		<Unit filename="src/recompiler3/arm/disasm.cpp" />
+		<Unit filename="src/recompiler3/arm/disasm.h" />
+		<Unit filename="src/recompiler3/arm/externs.h" />
+		<Unit filename="src/recompiler3/arm/mips_disasm.cpp" />
+		<Unit filename="src/recompiler3/arm/rec_alu.cpp.h" />
+		<Unit filename="src/recompiler3/arm/rec_bcu.cpp.h" />
+		<Unit filename="src/recompiler3/arm/rec_cp0.cpp.h" />
+		<Unit filename="src/recompiler3/arm/rec_cpo.h" />
+		<Unit filename="src/recompiler3/arm/rec_gte.cpp.h" />
+		<Unit filename="src/recompiler3/arm/rec_lsu.cpp.h" />
+		<Unit filename="src/recompiler3/arm/rec_mdu.cpp.h" />
+		<Unit filename="src/recompiler3/arm/recompiler.cpp" />
+		<Unit filename="src/recompiler3/arm/recompiler.h" />
+		<Unit filename="src/recompiler3/mips/defines.h" />
+		<Unit filename="src/recompiler3/mips/disasm.h" />
+		<Unit filename="src/recompiler3/mips/externs.h" />
+		<Unit filename="src/recompiler3/mips/mips.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/recompiler3/mips/mips_codegen.h" />
+		<Unit filename="src/recompiler3/mips/mips_disasm.cpp" />
+		<Unit filename="src/recompiler3/mips/mips_dpimacros.h" />
+		<Unit filename="src/recompiler3/mips/mips_std_rec_calls.cpp" />
+		<Unit filename="src/recompiler3/mips/mips_std_rec_debug.cpp" />
+		<Unit filename="src/recompiler3/mips/mips_std_rec_globals.cpp" />
+		<Unit filename="src/recompiler3/mips/mips_std_rec_regcache.cpp" />
+		<Unit filename="src/recompiler3/mips/rec_alu.cpp.h" />
+		<Unit filename="src/recompiler3/mips/rec_bcu.cpp.h" />
+		<Unit filename="src/recompiler3/mips/rec_cp0.cpp.h" />
+		<Unit filename="src/recompiler3/mips/rec_cpo.h" />
+		<Unit filename="src/recompiler3/mips/rec_gte.cpp.h" />
+		<Unit filename="src/recompiler3/mips/rec_lsu.cpp.h" />
+		<Unit filename="src/recompiler3/mips/rec_mdu.cpp.h" />
+		<Unit filename="src/recompiler3/mips/recompiler.cpp" />
+		<Unit filename="src/recompiler3/mips/recompiler.h" />
+		<Unit filename="src/sdl/minimal.cpp" />
+		<Unit filename="src/sdl/minimal.h" />
+		<Unit filename="src/sdl/timeval.h" />
+		<Unit filename="src/sio.cpp" />
+		<Unit filename="src/sio.h" />
+		<Unit filename="src/spu.cpp" />
+		<Unit filename="src/spu.h" />
+		<Unit filename="src/system.h" />
+		<Unit filename="src/unzip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/unzip.h" />
+		<Unit filename="src/zaurus_sdl/minimal.cpp" />
+		<Unit filename="src/zaurus_sdl/minimal.h" />
+		<Unit filename="src/zaurus_sdl/timeval.h" />
+		<Unit filename="src/zaurus_sdl/videogl.h" />
+		<Unit filename="src/zlib/adler32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/crc32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/deflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/deflate.h" />
+		<Unit filename="src/zlib/example.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/gzio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/infblock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/infblock.h" />
+		<Unit filename="src/zlib/infcodes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/infcodes.h" />
+		<Unit filename="src/zlib/inffast.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/inffast.h" />
+		<Unit filename="src/zlib/inffixed.h" />
+		<Unit filename="src/zlib/inflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/inftrees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/inftrees.h" />
+		<Unit filename="src/zlib/infutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/infutil.h" />
+		<Unit filename="src/zlib/maketree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/minigzip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/trees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/trees.h" />
+		<Unit filename="src/zlib/uncompr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/zcompress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/zconf.h" />
+		<Unit filename="src/zlib/zlib.h" />
+		<Unit filename="src/zlib/zutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zlib/zutil.h" />
+		<Unit filename="tools/cbin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/cbin.h" />
+		<Unit filename="tools/zconf.h" />
+		<Unit filename="tools/zlib.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
